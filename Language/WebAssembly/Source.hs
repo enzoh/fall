@@ -1,12 +1,12 @@
 module Language.WebAssembly.Source where
 
 import Data.Default.Class (Default(..))
-import Text.Printf        (printf)
+import Text.Printf (printf)
 
 data Position
    = Position
-   { _posFile   :: FilePath
-   , _posLine   :: Int
+   { _posFile :: FilePath
+   , _posLine :: Int
    , _posColumn :: Int
    } deriving (Eq)
 
@@ -21,7 +21,7 @@ instance Show Position where
 
 data Region
    = Region
-   { _regionLeft  :: Position
+   { _regionLeft :: Position
    , _regionRight :: Position
    } deriving (Eq)
 
