@@ -1,6 +1,3 @@
-{-# LANGUAGE MultiWayIf #-}
-{-# LANGUAGE RecordWildCards #-}
-
 module Language.WebAssembly.AST where
 
 import Data.Default.Class (Default(..))

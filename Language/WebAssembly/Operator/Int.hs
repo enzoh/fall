@@ -1,6 +1,3 @@
-{-# LANGUAGE DataKinds #-}
-{-# LANGUAGE TypeFamilies #-}
-
 module Language.WebAssembly.Operator.Int where
 
 import GHC.TypeLits (Nat)

@@ -1,5 +1,3 @@
-{-# LANGUAGE KindSignatures #-}
-
 module Language.WebAssembly.Operator.Generic where
 
 data Unary :: *
