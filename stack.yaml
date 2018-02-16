@@ -1,0 +1,5 @@
+build:
+  copy-bins: true
+packages:
+- .
+resolver: lts-10.5
