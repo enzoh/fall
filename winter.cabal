@@ -32,6 +32,7 @@ library
       Language.WebAssembly.Operator.Int
       Language.WebAssembly.Source
       Language.WebAssembly.Type
+      Language.WebAssembly.Value
    ghc-options:
       -O2
       -Wall
@@ -61,3 +62,4 @@ executable winter
       Language.WebAssembly.Operator.Int
       Language.WebAssembly.Source
       Language.WebAssembly.Type
+      Language.WebAssembly.Value

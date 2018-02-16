@@ -6,10 +6,11 @@ import Data.Int (Int32)
 import Language.WebAssembly.Operator
 import Language.WebAssembly.Source
 import Language.WebAssembly.Type
+import Language.WebAssembly.Value
 
 type Var = Phrase Int32
 
-type Literal = Phrase ValueType -- TODO: this line might not be correct...
+type Literal = Phrase Value
 
 type Name = [Int]
 
