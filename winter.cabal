@@ -30,6 +30,7 @@ library
       Language.WebAssembly.Operator.Float
       Language.WebAssembly.Operator.Generic
       Language.WebAssembly.Operator.Int
+      Language.WebAssembly.Source
       Language.WebAssembly.Type
    ghc-options:
       -O2
@@ -58,4 +59,5 @@ executable winter
       Language.WebAssembly.Operator.Float
       Language.WebAssembly.Operator.Generic
       Language.WebAssembly.Operator.Int
+      Language.WebAssembly.Source
       Language.WebAssembly.Type
