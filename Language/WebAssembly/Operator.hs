@@ -3,7 +3,6 @@ module Language.WebAssembly.Operator where
 import Language.WebAssembly.Operator.Float
 import Language.WebAssembly.Operator.Generic
 import Language.WebAssembly.Operator.Int
-import Language.WebAssembly.Type
 
 data UnaryOp
    = I32UnaryOp (I32Op Unary)
