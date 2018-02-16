@@ -39,6 +39,8 @@ data ConvertOp
 
 data LoadOp
    = LoadOp
+   deriving (Show)
 
 data StoreOp
    = StoreOp
+   deriving (Show)
