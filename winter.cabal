@@ -15,6 +15,7 @@ cabal-version: >=1.10
 library
    build-depends:
       base,
+      bytestring,
       data-default-class
    default-extensions:
       DataKinds
@@ -40,6 +41,7 @@ library
 executable winter
    build-depends:
       base,
+      bytestring,
       data-default-class
    default-extensions:
       DataKinds

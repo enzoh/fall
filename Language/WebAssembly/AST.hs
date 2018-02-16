@@ -1,5 +1,6 @@
 module Language.WebAssembly.AST where
 
+import Data.ByteString (ByteString)
 import Data.Default.Class (Default(..))
 import Data.Int (Int32)
 
@@ -90,7 +91,7 @@ data Segment' a
 
 type TableSegment = Segment [Var]
 
-type MemorySegment = Segment String
+type MemorySegment = Segment ByteString
 
 type Type = Phrase FuncType
 
@@ -139,8 +140,8 @@ data Module'
    , _moduleMemories :: [Memory]
    , _moduleFuncs :: [Func]
    , _moduleStart :: Maybe Var
-   , _moduleElems :: [Segment [Var]]
-   , _moduleData :: [Segment String]
+   , _moduleElems :: [TableSegment]
+   , _moduleData :: [MemorySegment]
    , _moduleImports :: [Import]
    , _moduleExports :: [Export]
    } deriving (Show)
