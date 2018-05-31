@@ -1,9 +1,9 @@
-module Language.WebAssembly.Value where
+module Language.WebAssembly.Syntax.Value where
 
 import Data.Bool (bool)
 import Data.Word (Word32, Word64)
 
-import Language.WebAssembly.Type
+import Language.WebAssembly.Syntax.Type
 
 data Value
    = I32 Word32

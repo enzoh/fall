@@ -1,8 +1,8 @@
-module Language.WebAssembly.Operator.Int where
+module Language.WebAssembly.Syntax.Operator.Int where
 
 import GHC.TypeLits (Nat)
 
-import Language.WebAssembly.Operator.Generic
+import Language.WebAssembly.Syntax.Operator.Generic
 
 data family IntOp :: Nat -> * -> *
 

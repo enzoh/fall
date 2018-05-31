@@ -1,4 +1,4 @@
-module Language.WebAssembly.Operator.Generic where
+module Language.WebAssembly.Syntax.Operator.Generic where
 
 data Unary :: *
 

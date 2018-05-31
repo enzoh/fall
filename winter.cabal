@@ -27,14 +27,14 @@ library
    default-language:
       Haskell2010
    exposed-modules:
-      Language.WebAssembly.AST
-      Language.WebAssembly.Operator
-      Language.WebAssembly.Operator.Float
-      Language.WebAssembly.Operator.Generic
-      Language.WebAssembly.Operator.Int
-      Language.WebAssembly.Source
-      Language.WebAssembly.Type
-      Language.WebAssembly.Value
+      Language.WebAssembly.Syntax.AST
+      Language.WebAssembly.Syntax.Operator
+      Language.WebAssembly.Syntax.Operator.Float
+      Language.WebAssembly.Syntax.Operator.Generic
+      Language.WebAssembly.Syntax.Operator.Int
+      Language.WebAssembly.Syntax.Source
+      Language.WebAssembly.Syntax.Type
+      Language.WebAssembly.Syntax.Value
    ghc-options:
       -O2
       -Wall
@@ -59,11 +59,11 @@ executable winter
    main-is:
       Main.hs
    other-modules:
-      Language.WebAssembly.AST
-      Language.WebAssembly.Operator
-      Language.WebAssembly.Operator.Float
-      Language.WebAssembly.Operator.Generic
-      Language.WebAssembly.Operator.Int
-      Language.WebAssembly.Source
-      Language.WebAssembly.Type
-      Language.WebAssembly.Value
+      Language.WebAssembly.Syntax.AST
+      Language.WebAssembly.Syntax.Operator
+      Language.WebAssembly.Syntax.Operator.Float
+      Language.WebAssembly.Syntax.Operator.Generic
+      Language.WebAssembly.Syntax.Operator.Int
+      Language.WebAssembly.Syntax.Source
+      Language.WebAssembly.Syntax.Type
+      Language.WebAssembly.Syntax.Value

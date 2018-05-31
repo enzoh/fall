@@ -1,8 +1,8 @@
-module Language.WebAssembly.Operator.Float where
+module Language.WebAssembly.Syntax.Operator.Float where
 
 import GHC.TypeLits (Nat)
 
-import Language.WebAssembly.Operator.Generic
+import Language.WebAssembly.Syntax.Operator.Generic
 
 data family FloatOp :: Nat -> * -> *
 

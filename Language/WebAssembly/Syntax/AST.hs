@@ -1,13 +1,13 @@
-module Language.WebAssembly.AST where
+module Language.WebAssembly.Syntax.AST where
 
 import Data.ByteString (ByteString)
 import Data.Default.Class (Default(..))
 import Data.Int (Int32)
 
-import Language.WebAssembly.Operator
-import Language.WebAssembly.Source
-import Language.WebAssembly.Type
-import Language.WebAssembly.Value
+import Language.WebAssembly.Syntax.Operator
+import Language.WebAssembly.Syntax.Source
+import Language.WebAssembly.Syntax.Type
+import Language.WebAssembly.Syntax.Value
 
 type Var = Phrase Int32
 

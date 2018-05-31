@@ -1,4 +1,4 @@
-module Language.WebAssembly.Type where
+module Language.WebAssembly.Syntax.Type where
 
 import Data.Int (Int32)
 
