@@ -1,4 +1,4 @@
-module Language.WebAssembly.Syntax.Source where
+module Language.WebAssembly.Util.Source where
 
 import Data.Default.Class (Default(..))
 import Text.Printf (printf)

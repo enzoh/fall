@@ -5,9 +5,9 @@ import Data.Default.Class (Default(..))
 import Data.Int (Int32)
 
 import Language.WebAssembly.Syntax.Operator
-import Language.WebAssembly.Syntax.Source
 import Language.WebAssembly.Syntax.Type
 import Language.WebAssembly.Syntax.Value
+import Language.WebAssembly.Util.Source
 
 type Var = Phrase Int32
 
