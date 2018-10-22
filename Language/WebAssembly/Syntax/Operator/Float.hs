@@ -2,7 +2,7 @@ module Language.WebAssembly.Syntax.Operator.Float where
 
 import GHC.TypeLits (Nat)
 
-import Language.WebAssembly.Syntax.Operator.Generic
+import Language.WebAssembly.Syntax.Operator.Kind
 
 data family FloatOp :: Nat -> * -> *
 

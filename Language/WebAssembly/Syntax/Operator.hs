@@ -1,8 +1,8 @@
 module Language.WebAssembly.Syntax.Operator where
 
 import Language.WebAssembly.Syntax.Operator.Float
-import Language.WebAssembly.Syntax.Operator.Generic
 import Language.WebAssembly.Syntax.Operator.Int
+import Language.WebAssembly.Syntax.Operator.Kind
 
 data UnaryOp
    = I32UnaryOp (I32Op Unary)

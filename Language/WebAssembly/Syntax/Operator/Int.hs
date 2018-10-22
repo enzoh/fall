@@ -2,7 +2,7 @@ module Language.WebAssembly.Syntax.Operator.Int where
 
 import GHC.TypeLits (Nat)
 
-import Language.WebAssembly.Syntax.Operator.Generic
+import Language.WebAssembly.Syntax.Operator.Kind
 
 data family IntOp :: Nat -> * -> *
 
