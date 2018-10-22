@@ -1,6 +1,6 @@
 module Language.WebAssembly.Syntax.AST where
 
-import Data.ByteString (ByteString)
+import Data.ByteString.Lazy (ByteString)
 import Data.Default.Class (Default(..))
 import Data.Int (Int32)
 
