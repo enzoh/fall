@@ -1,32 +1,35 @@
-name:          winter
-version:       0.0.0
-synopsis:      WebAssembly interpreter.
-license:       GPL-3
-copyright:     2018 DFINITY Stiftung
-author:        Enzo Haussecker <enzo@dfinity.org>
-maintainer:    Enzo Haussecker <enzo@dfinity.org>
-stability:     Experimental
-category:      Interpreter
-homepage:      https://github.com/enzoh/winter
-bug-reports:   https://github.com/enzoh/winter/issues
-build-type:    Simple
-cabal-version: >=1.10
+Name:          winter
+Version:       0.0.0
+Synopsis:      WebAssembly interpreter.
+License:       GPL-3
+Copyright:     2018 DFINITY Stiftung
+Author:        Enzo Haussecker <enzo@dfinity.org>
+Maintainer:    Enzo Haussecker <enzo@dfinity.org>
+Stability:     Experimental
+Category:      Interpreter
+Homepage:      https://github.com/enzoh/winter
+Bug-Reports:   https://github.com/enzoh/winter/issues
+Build-Type:    Simple
+Cabal-Version: >=1.10
 
-library
-   build-depends:
+Library
+   Build-Depends:
       base,
+      binary,
       bytestring,
       data-default-class
-   default-extensions:
+   Default-Extensions:
       DataKinds
       KindSignatures
       LambdaCase
       MultiWayIf
       RecordWildCards
       TypeFamilies
-   default-language:
+   Default-Language:
       Haskell2010
-   exposed-modules:
+   Exposed-Modules:
+      Language.WebAssembly.Binary.Decode
+      Language.WebAssembly.Binary.Encode
       Language.WebAssembly.Syntax.AST
       Language.WebAssembly.Syntax.Operator
       Language.WebAssembly.Syntax.Operator.Float
@@ -35,36 +38,30 @@ library
       Language.WebAssembly.Syntax.Type
       Language.WebAssembly.Syntax.Value
       Language.WebAssembly.Util.Source
-   ghc-options:
+   GHC-Options:
       -Wall
       -Werror
+   HS-Source-Dirs:
+      src
 
-executable winter
-   build-depends:
+Executable winter
+   Build-Depends:
       base,
+      binary,
       bytestring,
-      data-default-class
-   default-extensions:
-      DataKinds
-      KindSignatures
-      LambdaCase
-      MultiWayIf
+      cmdargs,
+      data-default-class,
+      winter
+   Default-Extensions:
+      DeriveDataTypeable
       RecordWildCards
-      TypeFamilies
-   default-language:
+   Default-Language:
       Haskell2010
-   ghc-options:
+   GHC-Options:
       -O2
       -Wall
       -Werror
-   main-is:
+   HS-Source-Dirs:
+      app
+   Main-Is:
       Main.hs
-   other-modules:
-      Language.WebAssembly.Syntax.AST
-      Language.WebAssembly.Syntax.Operator
-      Language.WebAssembly.Syntax.Operator.Float
-      Language.WebAssembly.Syntax.Operator.Int
-      Language.WebAssembly.Syntax.Operator.Kind
-      Language.WebAssembly.Syntax.Type
-      Language.WebAssembly.Syntax.Value
-      Language.WebAssembly.Util.Source

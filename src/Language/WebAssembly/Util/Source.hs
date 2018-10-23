@@ -1,13 +1,14 @@
 module Language.WebAssembly.Util.Source where
 
 import Data.Default.Class (Default(..))
+import Data.Int (Int64)
 import Text.Printf (printf)
 
 data Position
    = Position
    { _posFile :: FilePath
-   , _posLine :: Int
-   , _posColumn :: Int
+   , _posLine :: Int64
+   , _posColumn :: Int64
    } deriving (Eq)
 
 instance Default Position where
