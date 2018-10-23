@@ -1,7 +1,7 @@
 Name:          winter
 Version:       0.0.0
-Synopsis:      WebAssembly interpreter.
-License:       GPL-3
+Synopsis:      A WebAssembly interpreter.
+License:       MIT
 Copyright:     2018 DFINITY Stiftung
 Author:        Enzo Haussecker <enzo@dfinity.org>
 Maintainer:    Enzo Haussecker <enzo@dfinity.org>
